@@ -13,6 +13,8 @@
 		31EFEC8F1ED75B8100FD11F6 /* GetInspired.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 31EFEC8D1ED75B8100FD11F6 /* GetInspired.xcdatamodeld */; };
 		31EFEC911ED75B8100FD11F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31EFEC901ED75B8100FD11F6 /* Assets.xcassets */; };
 		31EFEC941ED75B8100FD11F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31EFEC921ED75B8100FD11F6 /* LaunchScreen.storyboard */; };
+		31EFEC9C1ED7673E00FD11F6 /* Star Stuff.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 31EFEC9B1ED7673E00FD11F6 /* Star Stuff.jpg */; };
+		31EFEC9E1ED76A7100FD11F6 /* QuoteCatcherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EFEC9D1ED76A7100FD11F6 /* QuoteCatcherViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		31EFEC901ED75B8100FD11F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31EFEC931ED75B8100FD11F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31EFEC951ED75B8100FD11F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31EFEC9B1ED7673E00FD11F6 /* Star Stuff.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Star Stuff.jpg"; sourceTree = "<group>"; };
+		31EFEC9D1ED76A7100FD11F6 /* QuoteCatcherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteCatcherViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +60,10 @@
 		31EFEC851ED75B8100FD11F6 /* GetInspired */ = {
 			isa = PBXGroup;
 			children = (
+				31EFEC9B1ED7673E00FD11F6 /* Star Stuff.jpg */,
 				31EFEC861ED75B8100FD11F6 /* AppDelegate.swift */,
 				31EFEC881ED75B8100FD11F6 /* ViewController.swift */,
+				31EFEC9D1ED76A7100FD11F6 /* QuoteCatcherViewController.swift */,
 				31EFEC8A1ED75B8100FD11F6 /* Main.storyboard */,
 				31EFEC901ED75B8100FD11F6 /* Assets.xcassets */,
 				31EFEC921ED75B8100FD11F6 /* LaunchScreen.storyboard */,
@@ -129,6 +135,7 @@
 				31EFEC941ED75B8100FD11F6 /* LaunchScreen.storyboard in Resources */,
 				31EFEC911ED75B8100FD11F6 /* Assets.xcassets in Resources */,
 				31EFEC8C1ED75B8100FD11F6 /* Main.storyboard in Resources */,
+				31EFEC9C1ED7673E00FD11F6 /* Star Stuff.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31EFEC9E1ED76A7100FD11F6 /* QuoteCatcherViewController.swift in Sources */,
 				31EFEC891ED75B8100FD11F6 /* ViewController.swift in Sources */,
 				31EFEC871ED75B8100FD11F6 /* AppDelegate.swift in Sources */,
 				31EFEC8F1ED75B8100FD11F6 /* GetInspired.xcdatamodeld in Sources */,

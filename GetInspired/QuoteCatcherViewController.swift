@@ -55,6 +55,8 @@ class QuoteCatcherViewController: UIViewController, UIImagePickerControllerDeleg
         quote.image = NSData(data: UIImagePNGRepresentation(quoteImageView.image!)!)
         
         (UIApplication.shared.delegate as! AppDelegate).saveContext()
+        
+        navigationController!.popViewController(animated: true)
     }
     
     

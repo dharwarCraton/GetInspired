@@ -47,6 +47,14 @@ class QuoteCatcherViewController: UIViewController, UIImagePickerControllerDeleg
     }
     
     @IBAction func addTapped(_ sender: Any) {
+        
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        
+        let quote = Quotes(context: context)
+        quote.title = titleTextField.text
+        quote.image = NSData(data: UIImagePNGRepresentation(quoteImageView.image!)!)
+        
+        (UIApplication.shared.delegate as! AppDelegate).saveContext()
     }
     
     

@@ -14,6 +14,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     var quoteCollection : [Quotes] = []
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -45,6 +46,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.textLabel?.text = quote.title
         cell.imageView?.image = UIImage(data: quote.image as! Data)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let quote = quoteCollection[indexPath.row]
+        performSegue(withIdentifier: "quoteSegue", sender: quote)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nextVC = segue.destination as! QuoteCatcherViewController
+        nextVC.quote = sender as? Quotes
     }
 }
 

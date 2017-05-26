@@ -8,7 +8,7 @@
 
 import UIKit
 
-class QuoteCatcherViewController: UIViewController {
+class QuoteCatcherViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     /*
         OUTLETS connected here
     */
@@ -17,14 +17,22 @@ class QuoteCatcherViewController: UIViewController {
     
     @IBOutlet weak var titleTextField: UITextField!
     
+    var imagePicker = UIImagePickerController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        imagePicker.delegate = self
         
     /*
          ACTIONS connected here
     */
     }
     @IBAction func photosTapped(_ sender: Any) {
+        
+        imagePicker.sourceType = .photoLibrary
+        
+        present(imagePicker, animated: true, completion: nil)
     }
     
     @IBAction func cameraTapped(_ sender: Any) {
